@@ -37,10 +37,10 @@ const port = process.env.PORT || 3001;
 
 
 
-app.use(cors({ origin: url, credentials: true }));
+app.use(cors({ origin: "https://cmpe-273-linkedin.herokuapp.com", credentials: true }));
 app.use(function(req, res, next) {
 
-    res.setHeader('Access-Control-Allow-Origin', url);
+    res.setHeader('Access-Control-Allow-Origin', "https://cmpe-273-linkedin.herokuapp.com");
     res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
@@ -71,7 +71,7 @@ app.use('/userdata', activitytracker)
 app.use('/incomplete', activitytrackerincomplete)
 app.use('/jobs',jobs);
 app.use('/recruiter',dashboard);
-app.use('/',jobpostings)
+//app.use('/',jobpostings)
 app.use('/messages', messages);
 app.use('/recruiter', dashboard);
 app.use('/getjobs',getjobs);
@@ -128,10 +128,10 @@ app.post('/uploadresume', upload.single('selectedFile'), function(req, res, next
 });
 
 
-app.use("/graphql",graphqlHTTP({
-  schema,
-  graphiql: true
-}));
+// app.use("/graphql",graphqlHTTP({
+//   schema,
+//   graphiql: true
+// }));
 
 
 var server = app.listen(port,()=>{
