@@ -279,7 +279,7 @@ var {JobPostings} = require('./../models/JobPostings');
 var {User} = require('./../models/user.js');
 var {mongoose} = require('../db/mongoose');
 var jobpostings_db = require('../db/jobpostings.js');
-var kafka = require('./../kafka/client.js');
+//var kafka = require('./../kafka/client.js');
 const multer = require('multer');
 var fs = require('fs');
 // job listing without kafka

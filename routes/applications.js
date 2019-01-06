@@ -3,7 +3,7 @@ var router = express.Router();
 var {Applications} = require('./../models/application');
 var {JobPostings} = require('../models/JobPostings');
 var {User} = require('./../models/user');
-var kafka = require('./../kafka/client.js');
+//var kafka = require('./../kafka/client.js');
 
 //apply custom job
 

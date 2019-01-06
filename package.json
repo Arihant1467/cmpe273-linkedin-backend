@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Arihant Sai Paruchuru",
   "license": "ISC",
   "dependencies": {
     "base64-img": "^1.0.4",
@@ -42,9 +42,7 @@
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
-    "redis": "^2.8.0",
     "request": "^2.88.0",
-    "socket.io": "^2.1.1",
     "uuid": "^3.3.2"
   }
 }
