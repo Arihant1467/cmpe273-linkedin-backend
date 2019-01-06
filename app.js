@@ -71,7 +71,7 @@ app.use('/userdata', activitytracker)
 app.use('/incomplete', activitytrackerincomplete)
 app.use('/jobs',jobs);
 app.use('/recruiter',dashboard);
-//app.use('/',jobpostings)
+app.use('/',jobpostings)
 app.use('/messages', messages);
 app.use('/recruiter', dashboard);
 app.use('/getjobs',getjobs);
