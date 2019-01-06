@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var {JobPostings} = require('../models/JobPostings');
+var {JobPostings} = require('../models/jobpostings.js');
 
 router.post('/postjob', function(req, res) {
     console.log("Received Body ", req.body)
